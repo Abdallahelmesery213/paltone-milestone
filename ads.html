@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css" >
+    <!-- <link rel="stylesheet" href='./assets/css/magnific-popup.min.css'> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/0.9.1/magnific-popup.css">
+    <link rel="stylesheet" href='./assets/css/date-picker.min.css'>
+    <link href="https://cdn.rawgit.com/harvesthq/chosen/gh-pages/chosen.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="./assets/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="./assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://phpcoder.tech/multiselect/css/jquery.multiselect.css">
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>Ads</title>
+</head>
+<body>
+    <div class="summary">
+
+        <!-- start navbar -->
+        <!-- end navbar -->
+
+        <div class="summary-content mt-5">
+            <div class="container">
+                <div class="row nav2 mb-3">
+                    <div class="col-md-2">
+                        <span style="cursor: pointer;"> 
+                            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M11 0L12 0V12H11V0ZM3.707 8.293L1.914 6.5L9 6.5V5.5L1.914 5.5L3.707 3.707L3 3L0 6L3 9L3.707 8.293Z" fill="black"/>
+                            </svg>
+                            الرجوع
+                        </span>
+                    </div>
+                    <div class="col-md-6">
+                        <button>
+                            <a>الرئيسية</a>
+                        </button>
+
+                        <button class="add">
+                            <a href="#popup-ads" class="open-popup-link">
+                                اضافة اعلان جديد
+                            </a>
+                        </button>
+                        <div id="popup-ads" class="white-popup pop-ads mfp-hide">
+                            <div class="header-pop header-pop-address">
+                                <img src="./assets/images/logo.png" alt="logo" class="img-fluid">
+                                <h5>إضافة اعلان جديد</h5>
+                            </div>
+                            <div class="content-pop">
+                                <div class="row" dir="rtl">
+                                    <div class="col-2">
+                                        <div class="tabs">
+                                            <div class="icons-tabs">
+                                                <div class="icon">
+                                                    <img src="./assets/images/ads-icon1.png" alt="icon">
+                                                </div>
+                                                <div class="icon">
+                                                    <img src="./assets/images/ads-icon2.png" alt="icon">
+                                                </div>
+                                                <div class="icon">
+                                                    <img src="./assets/images/ads-icon3.png" alt="icon">
+                                                </div>
+                                                <div class="icon">
+                                                    <img src="./assets/images/ads-icon4.png" alt="icon">
+                                                </div>
+                                            </div>
+                                            <img width="20" height="252" src="./assets/images/add-ads-tabs.png" alt="tabs">
+                                        </div>
+                                    </div>
+                                    <div class="col-10 text-right">
+                                        <div class="row">
+                                            <div class="col title">
+                                                <h5>بيانات الوظيفة </h5>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-9">
+                                                <input type="text" class="form-control" placeholder="المسمى الوظيفي لدى المنشاة *" >
+                                            </div>
+                                            <div class="col-3">
+                                                <input class="form-control inp-number" type="text" placeholder="العدد المطلوب">
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col">
+                                                <select class="form-control">
+                                                    <option>
+                                                        أقرب مسمى وظيفي حسب
+                                                        <span style="font-size:12px">(التأمينات الإجتماعية)</span>
+                                                    </option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <div class="form-group">
+                                                    <div class="custom-control custom-checkbox">
+                                                        <input type="checkbox" class="custom-control-input" id="customCheck1">
+                                                        <label class="custom-control-label" for="customCheck1">غير محدد</label>
+                                                    </div>
+                                                    <select class="form-control">
+                                                        <option selected>
+                                                            طبيعة العمل <span class="explain">(عن بعد , في المنشأة)</span>
+                                                        </option>
+                                                        <option>عن بعد</option>
+                                                        <option>فى المنشأة</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-6">
+                                                <div class="form-group">
+                                                    <div class="custom-control custom-checkbox">
+                                                        <input type="checkbox" class="custom-control-input" id="customCheck2">
+                                                        <label class="custom-control-label" for="customCheck2">غير محدد</label>
+                                                    </div>
+                                                    <select class="form-control">
+                                                        <option selected>موقع العمل *</option>
+                                                        <option>عن بعد</option>
+                                                        <option>فى المنشأة</option>
+                                                    </select>
+                                                    <div class="add-ads-btn">
+                                                        <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M10.5 5.08838V5.83838H6V10.3384H5.25V5.83838H0.75V5.08838H5.25V0.588379H6V5.08838H10.5Z" fill="white"/>
+                                                        </svg>
+                                                           <a href="#popup-ads-address" class="open-popup-link"> إضافة موقع</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row second-form-group">
+                                            <div class="col-4">
+                                                <div class="form-group">
+                                                    <div class="custom-control custom-checkbox">
+                                                        <input type="checkbox" class="custom-control-input" id="customCheck3">
+                                                        <label class="custom-control-label" for="customCheck3">غير محدد</label>
+                                                    </div>
+                                                    <select class="form-control">
+                                                        <option selected> نوع الوظيفة </option>
+                                                        <option>دائمة</option>
+                                                        <option>مؤقتة</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-4">
+                                                <div class="form-group">
+                                                    <div class="custom-control custom-checkbox">
+                                                        <input type="checkbox" class="custom-control-input" id="customCheck4">
+                                                        <label class="custom-control-label" for="customCheck4">غير محدد</label>
+                                                    </div>
+                                                    <select class="form-control">
+                                                        <option selected>نوع الدوام</option>
+                                                        <option>دوام حر</option>
+                                                        <option>دوام كامل</option>
+                                                        <option>دوام مرن</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-4">
+                                                <div class="form-group">
+                                                    <div class="custom-control custom-checkbox">
+                                                        <input type="checkbox" class="custom-control-input" id="customCheck5">
+                                                        <label class="custom-control-label" for="customCheck5">غير محدد</label>
+                                                    </div>
+                                                    <select class="form-control">
+                                                        <option selected>الراتب</option>
+                                                        <option>1000 - 2000 $</option>
+                                                        <option>5000 - 10000 $</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            <div class="footer-pop footer-ads">
+                                <div class="row">
+                                    <div class="col-6 text-left">
+                                        <button class="back"><a href="./ads.html">السابق</a></button>
+                                    </div>
+                                    <div class="col-3 text-right">
+                                        <button class="cancel mfp-close">حفظ وخروج</button>
+                                    </div>
+                                    <div class="col-3 text-right">
+                                        <button class="next">
+                                            <a href="#popup-ads2" class="open-popup-link">التالى</a>
+                                        </button>
+                                        <div id="popup-ads2" class="white-popup pop-ads mfp-hide">
+                                            <div class="header-pop header-pop-address">
+                                                <img src="./assets/images/logo.png" alt="logo" class="img-fluid">
+                                                <h5>إضافة اعلان جديد</h5>
+                                            </div>
+                                            <div class="content-pop">
+                                                <div class="row" dir="rtl">
+                                                    <div class="col-2">
+                                                        <div class="tabs">
+                                                            <div class="icons-tabs">
+                                                                <div class="icon">
+                                                                    <img src="./assets/images/ads-icon1.png" alt="icon">
+                                                                </div>
+                                                                <div class="icon">
+                                                                    <img src="./assets/images/ads-icon2.png" alt="icon">
+                                                                </div>
+                                                                <div class="icon">
+                                                                    <img src="./assets/images/ads-icon3.png" alt="icon">
+                                                                </div>
+                                                                <div class="icon">
+                                                                    <img src="./assets/images/ads-icon4.png" alt="icon">
+                                                                </div>
+                                                            </div>
+                                                            <img width="20" height="252" src="./assets/images/add-ads-tabs.png" alt="tabs">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-10 text-right">
+                                                        <div class="textarea-popup">
+                                                            <div class="row">
+                                                                <div class="col">
+                                                                    <textarea class="form-control" placeholder=" وصف الوظيفة *">
+
+                                                                    </textarea>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        
+                                                    </div>
+                                                </div>
+                                                
+                                            </div>
+                                            <div class="footer-pop footer-ads">
+                                                <div class="row">
+                                                    
+                                                    <div class="col-6 text-left">
+                                                        <button class="back">
+                                                            <a href="#popup-ads" class="open-popup-link">السابق</a>
+                                                        </button>
+                                                    </div>
+                                                   
+                                                    <div class="col-3 text-right">
+                                                        <button class="cancel mfp-close">حفظ وخروج</button>
+                                                    </div>
+                                                    <div class="col-3 text-right">
+                                                        <button class="next">
+                                                            <a href="#popup-ads3" class="open-popup-link">التالى</a>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 text-right">
+                        <h6 class="font-weight-bold pr-3">الأعلانات</h6>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-11 col-sm-10">
+                        
+                    </div>
+                    <div class="col-md-1 col-sm-2 icons text-center">
+                        <div class="icon">
+                            <img src="./assets/images/board-icon.png" alt="icon" class="img-fluid">
+                        </div>
+                        <div class="icon">
+                            <img src="./assets/images/users-icon.png" alt="icon" class="img-fluid">
+                        </div>
+                        <div class="icon">
+                            <img src="./assets/images/calendar-icon.png" alt="icon" class="img-fluid">
+                        </div>
+                        <div class="icon active-icon">
+                            <img src="./assets/images/building-icon.png" alt="icon" class="img-fluid">
+                        </div>
+                        <div class="icon">
+                            <img src="./assets/images/notes-icon.png" alt="icon" class="img-fluid">
+                        </div>
+                        <div class="icon">
+                            <img src="./assets/images/ads-icon.png" alt="ads" class="img-fluid">
+                        </div>
+                        <div class="icon">
+                            <img src="./assets/images/users-solid.png" alt="icon" class="img-fluid">
+                        </div>
+                        <div class="icon">
+                            <img src="./assets/images/contact-icon.png" alt="icon" class="img-fluid">
+                        </div>
+                        <div class="icon">
+                            <img src="./assets/images/lock-icon.png" alt="icon" class="img-fluid">
+                        </div>
+                        <div class="icon">
+                            <img src="./assets/images/switch-icon.png" alt="icon" class="img-fluid">
+                        </div>
+                        <div class="icon">
+                            <img src="./assets/images/logout-icon.png" alt="icon" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div id="popup-ads3" class="white-popup pop-ads mfp-hide">
+            <div class="header-pop header-pop-address header-ads2">
+                <img src="./assets/images/logo.png" alt="logo" class="img-fluid">
+                <h5>إضافة اعلان جديد</h5>
+            </div>
+            <div class="content-pop">
+                <div class="row" dir="rtl">
+                    <div class="col-2">
+                        <div class="tabs">
+                            <div class="icons-tabs">
+                                <div class="icon">
+                                    <img src="./assets/images/ads-icon1.png" alt="icon">
+                                </div>
+                                <div class="icon">
+                                    <img src="./assets/images/ads-icon2.png" alt="icon">
+                                </div>
+                                <div class="icon">
+                                    <img src="./assets/images/ads-icon3.png" alt="icon">
+                                </div>
+                                <div class="icon">
+                                    <img src="./assets/images/ads-icon4.png" alt="icon">
+                                </div>
+                            </div>
+                            <img width="20" height="252" src="./assets/images/add-ads-tabs.png" alt="tabs">
+                        </div>
+                    </div>
+                    <div class="col-10 text-right">
+                        <div class="learning-popup">
+                            <div class="row">
+                                <div class="col">
+                                    <div class="form-group">
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input" id="check-learn">
+                                            <label class="custom-control-label" for="check-learn">غير محدد</label>
+                                        </div>
+                                        <select class="form-control">
+                                            <option selected>
+                                                المستوي التعليمي *
+                                            </option>
+                                            <option>بدون</option>
+                                            <option>ابتدائى</option>
+                                            <option>متوسطة</option>
+                                            <option>ثانوية عامة</option>
+                                            <option>دبلوم</option>
+                                            <option>بكالوريوس</option>
+                                            <option>ماجستير</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <div class="form-group">
+                                        <div id="output" dir="rtl"></div>
+
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input" id="check-learn2">
+                                            <label class="custom-control-label" for="check-learn2">غير محدد</label>
+                                        </div>
+
+                                        <select data-placeholder="التخصص العلمي المطلوب *" name="tags[]" multiple class="chosen-select" dir="rtl">
+                                            <option value="infSecu">امن معلومات</option>
+                                            <option value="ilam">اعلام</option>
+                                            <option value="Iqtsad">اقتصاد</option>
+                                            <option value="art">التربية الفنية</option>
+                                            <option value="media">الخدمه الاجتماعية</option>
+                                            <option value="networks">الشبكات</option>
+                                            <option value="arabic">اللغة العربية</option>
+                                        </select>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-5">
+                                    <input type="text" class="form-control" placeholder="الحد الأدني من سنوات الخبرة *" >
+                                </div>
+                            </div>
+
+                        </div>
+                        
+                    </div>
+                </div>
+                
+            </div>
+            <div class="footer-pop footer-ads">
+                <div class="row">
+                    <div class="col-6 text-left">
+                        <button class="back"><a href="#popup-ads2" class="open-popup-link">السابق</a></button>
+                    </div>
+                    <div class="col-3 text-right">
+                        <button class="cancel mfp-close">حفظ وخروج</button>
+                    </div>
+                    
+                    <div class="col-3 text-right">
+                        <button class="next">
+                            <a href="#popup-ads4" class="open-popup-link">التالى</a>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="popup-ads4" class="white-popup pop-ads mfp-hide">
+            <div class="header-pop header-pop-address header-ads2">
+                <img src="./assets/images/logo.png" alt="logo" class="img-fluid">
+                <h5>إضافة اعلان جديد</h5>
+            </div>
+            <div class="content-pop">
+                <div class="row" dir="rtl">
+                    <div class="col-2">
+                        <div class="tabs">
+                            <div class="icons-tabs">
+                                <div class="icon">
+                                    <img src="./assets/images/ads-icon1.png" alt="icon">
+                                </div>
+                                <div class="icon">
+                                    <img src="./assets/images/ads-icon2.png" alt="icon">
+                                </div>
+                                <div class="icon">
+                                    <img src="./assets/images/ads-icon3.png" alt="icon">
+                                </div>
+                                <div class="icon">
+                                    <img src="./assets/images/ads-icon4.png" alt="icon">
+                                </div>
+                            </div>
+                            <img width="20" height="252" src="./assets/images/add-ads-tabs.png" alt="tabs">
+                        </div>
+                    </div>
+                    <div class="col-10 text-right">
+                        <div class="learning-popup">
+                            <div class="row">
+                                <div class="col">
+                                    <div class="form-group">
+
+                                        <div id="output2" dir="rtl"></div>
+                                    
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input" id="check-lang">
+                                            <label class="custom-control-label" for="check-lang">غير محدد</label>
+                                        </div>
+
+                                        <select data-placeholder="اللغات المطلوية *" name="tags[]" multiple class="chosen-select" dir="rtl">
+                                            <option value="arabic">العربية</option>
+                                            <option value="english">انجليزية</option>
+                                            <option value="french">فرنسية</option>
+                                            <option value="german">المانية</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <div class="form-group">
+                                        
+                                        <div id="output2" dir="rtl"></div>
+                                    
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input" id="check-prop">
+                                            <label class="custom-control-label" for="check-prop">غير محدد</label>
+                                        </div>
+
+                                        <select data-placeholder="تناسب ذوي الإحتياجات الخاصة *" name="tags[]" multiple class="chosen-select" dir="rtl">
+                                            <option value="nonlisten">العجز السمعي</option>
+                                            <option value="nonmove">العجز الحركي</option>
+                                            <option value="noneseen">العجز البصري</option>
+                                        </select>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-6">
+                                    <div class="input-field input-group date" id="datetimepicker" >
+                                        
+                                        <span class="input-group-addon"></span>
+                                        <input type="text" class="form-control" placeholder="تاريخ انتهاء الإعلان *" >
+                                        <div class="icon-mail">
+                                            <img src="./assets/images/datepicker.png" class="img-fluid" alt="datep">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        
+                    </div>
+                </div>
+                
+            </div>
+            <div class="footer-pop footer-ads">
+                <div class="row">
+                    <div class="col-6 text-left">
+                        <button class="back"><a class="open-popup-link" href="#popup-ads3">السابق</a></button>
+                    </div>
+                    <div class="col-3 text-right">
+                        <button class="cancel mfp-close">حفظ وخروج</button>
+                    </div>
+                    <div class="col-3 text-right">
+                        <button class="next">
+                            <a >التالى</a>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="popup-ads-address" class="white-popup pop-ads mfp-hide">
+            <div class="header-pop header-pop-address header-ads2">
+                <h5>بيانات الموقع</h5>
+            </div>
+            <div class="content-pop">
+                <div class="row" dir="rtl">
+                    <div class="col-2">
+                        <div class="tabs">
+                            <div class="icons-tabs">
+                                <div class="icon">
+                                    <img src="./assets/images/ads-icon1.png" alt="icon">
+                                </div>
+                                <div class="icon">
+                                    <img src="./assets/images/ads-icon2.png" alt="icon">
+                                </div>
+                                <div class="icon">
+                                    <img src="./assets/images/ads-icon3.png" alt="icon">
+                                </div>
+                                <div class="icon">
+                                    <img src="./assets/images/ads-icon4.png" alt="icon">
+                                </div>
+                            </div>
+                            <img width="20" height="252" src="./assets/images/add-ads-tabs.png" alt="tabs">
+                        </div>
+                    </div>
+                    <div class="col-10 text-right">
+                        <div class="learning-popup">
+                            <div class="row">
+                                <div class="col">
+                                    <input class="form-control" type="text" placeholder="ادخل العنوان الوطني او اختر من علي الخريطة * ">
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col">
+                                    <input class="form-control" type="text" placeholder=" مسمي الموقع (مثال: المركز الرئيسي,فرع الرياض,الخ ... )">
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col">
+                                    <div class="location-map">
+                                        <iframe width="530" height="200" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="" id="mapping"></iframe>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-pop footer-ads">
+                <div class="row">
+                    <div class="col-6 text-left">
+                        <button class="back"><a class="open-popup-link" href="#popup-ads">السابق</a></button>
+                    </div>
+                    <div class="col-3 text-right">
+                        <button class="cancel mfp-close">حفظ وخروج</button>
+                    </div>
+                    <div class="col-3 text-right">
+                        <button class="next">
+                            <a href="#popup-ads2" class="open-popup-link">التالى</a>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        
+    </div>
+
+    <script src="./assets/js/jquery.min.js"></script>
+    <script src="./assets/js/popper.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+    <!-- <script src="assets/js/magnific-popup.min.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/0.9.1/jquery.magnific-popup.js"></script>
+    <script src="./assets/js/bootstrap-datepicker.min.js"></script>
+    <script src="https://cdn.rawgit.com/harvesthq/chosen/gh-pages/chosen.jquery.min.js"></script>
+    <script src="./assets/js/owl.carousel.min.js"></script>
+    <script src="https://phpcoder.tech/multiselect/js/jquery.multiselect.js"></script>
+    <script src="./assets/js/custom.js"></script>
+    <script>
+        if(window.navigator.geolocation){
+            window.navigator.geolocation.getCurrentPosition(function(data){
+                console.log(data.coords.latitude , data.coords.longitude);  // خطوط الطول وخطوط  العرض
+                let url = "https://maps.google.com/maps?q="+data.coords.latitude+","+data.coords.longitude+"&hl=es&z=14&output=embed"
+                document.getElementById("mapping").src=url;
+            },function(error){
+                console.log(error)
+            })
+        }
+
+        document.getElementById('output').innerHTML = location.search;
+        $(".chosen-select").chosen();
+
+    </script>
+    
+   
+    
+    
+    
+</body>
+</html>

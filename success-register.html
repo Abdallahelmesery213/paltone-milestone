@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css" >
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.3/css/intlTelInput.min.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>success register</title>
+</head>
+<body>
+    <div class="login-content">
+        <div class="overlay-body"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="form ">
+
+                        <div class="success-title">
+                            <h5>تم تسجيل بيانات المنشأة بنجاح</h5>
+
+                            <img src="./assets/images/right-icon.png" class="img-fluid">
+
+                            <button class="back-to-home">
+                                <a>الذهاب الي الرئيسية</a>
+                            </button>
+
+                        </div>
+                        
+                      
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    <script src="./assets/js/jquery.min.js"></script>
+    <script src="./assets/js/popper.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+    <!-- <script src="assets/js/magnific-popup.min.js"></script> -->
+    <script src="./assets/js/custom.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.3/js/intlTelInput.min.js"></script>
+    <script>
+       if(window.navigator.geolocation){
+            window.navigator.geolocation.getCurrentPosition(function(data){
+                console.log(data.coords.latitude , data.coords.longitude);  // خطوط الطول وخطوط  العرض
+                let url = "https://maps.google.com/maps?q="+data.coords.latitude+","+data.coords.longitude+"&hl=es&z=14&output=embed"
+                document.getElementById("mapping").src=url;
+            },function(error){
+                console.log(error)
+            })
+        }
+    </script>
+    
+    
+    
+    
+</body>
+</html>

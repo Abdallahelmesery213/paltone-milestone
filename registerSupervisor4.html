@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css" >
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.3/css/intlTelInput.min.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>step 4</title>
+</head>
+<body>
+    <div class="login-content">
+        <div class="overlay-body"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="form form4 form-address">
+                        <div class="login-section log-sec-ex">
+                            <div class="row">
+                                <div class="col-10 text-center">
+                                    <div class="sup-title ">
+                                        <h5>العنوان الوطني </h5>
+                                        <div> <span>4 /</span> <span class="active">4</span></div>
+                                    </div>
+                                </div>
+                                <div class="col-2 text-right">
+                                    <div class="exit">
+                                        <span>خروج</span> 
+                                        <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1 12H0L0 0H1L1 12ZM8.293 3.707L10.086 5.5L3 5.5V6.5L10.086 6.5L8.293 8.293L9 9L12 6L9 3L8.293 3.707Z" fill="#266962"/>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <form dir="rtl" class="step4 sup-form form-map">
+                    
+                            <div class="input-field" >
+                                <input type="text" class="form-control" placeholder=" مسمي الموقع (مثال: المركز الرئيسي,فرع الرياض,الخ ... ) *" style="width: 100%;">
+                            </div>
+
+                            <div class="input-field" >
+                                <div class="icon-mail">
+                                    <img src="./assets/images/search-icon.png" class="img-fluid" alt="mail">
+                                </div>
+                                <input type="text" class="form-control" placeholder=" ادخل العنوان الوطني او اختر من علي الخريطة *">
+                            </div>
+
+                            <div class="location-map">
+                                <iframe width="500" height="200" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="" id="mapping"></iframe>
+                            </div>
+
+                            <div class="input-field input-location" >
+                                <input type="text" class="form-control" placeholder=" الموقع الإلكتروني * " style="width: 100%;">
+                            </div>
+                            
+                            <div class="buttons">
+                                <div class="row">
+                                    <div class="col-6 text-right">
+                                        <button class=" back"><a href="./registerSupervisor3.html">السابق </a></button>
+                                    </div>
+                                    <div class="col-6 ">
+                                        <button class="next-button "><a href="./success-register.html">التالى</a></button>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="steps text-center">
+                <span ><a href="./registerSupervisor.html"></a></span>
+                <span> <a href="./registerSupervisor2.html"></a> </span>
+                <span> <a href="./registerSupervisor3.html"></a></span>
+                <span class="active"></span>
+            </div>
+        </div>
+    </div>
+
+    <script src="./assets/js/jquery.min.js"></script>
+    <script src="./assets/js/popper.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+    <!-- <script src="assets/js/magnific-popup.min.js"></script> -->
+    <script src="./assets/js/custom.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.3/js/intlTelInput.min.js"></script>
+    <script>
+       if(window.navigator.geolocation){
+            window.navigator.geolocation.getCurrentPosition(function(data){
+                console.log(data.coords.latitude , data.coords.longitude);  // خطوط الطول وخطوط  العرض
+                let url = "https://maps.google.com/maps?q="+data.coords.latitude+","+data.coords.longitude+"&hl=es&z=14&output=embed"
+                document.getElementById("mapping").src=url;
+            },function(error){
+                console.log(error)
+            })
+        }
+    </script>
+    
+    
+    
+    
+</body>
+</html>

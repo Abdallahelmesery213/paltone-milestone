@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css" >
+    <!-- <link rel="stylesheet" href='./assets/css/magnific-popup.min.css'> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/0.9.1/magnific-popup.css">
+    <link rel="stylesheet" href='./assets/css/date-picker.min.css'>
+    <!-- <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />     -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>summary</title>
+</head>
+<body>
+    <div class="summary">
+
+        <!-- start navbar -->
+        <!-- end navbar -->
+
+        <div class="summary-content mt-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-11 col-sm-10">
+                        <div class="title" dir="rtl">
+                            <div class="row">
+                                <div class="col-sm-2">
+                                    <img src="./assets/images/oil-logo.png" alt="oil-logo" class="img-fluid">
+                                </div>
+                                <div class="col-sm-8 text-right">
+                                    <div class="description">
+                                        <h3>شركة الزيت العربية السعودية </h3>
+                                        <a>https://esraaafifi.com</a>
+                                        <p>رقم ملف المنشأة في المنصة الأولى S01002</p>
+                                    </div>
+                                </div>
+                                <div class="col-sm-2 edit-title">
+                                    <a href="#popup-edit-title" class="open-popup-link">
+                                        <img src="./assets/images/oil-edit-icon.png" alt="icon" class="img-fluid">
+                                    </a>
+                                </div>
+
+                                <div id="popup-edit-title" class="white-popup white-pop-milestone white-pop-edit-title mfp-hide">
+                                    <div class="header-pop">
+                                        <img src="./assets/images/logo.png" alt="logo" class="img-fluid">
+                                        <h5>تعديل ملف المنشأة</h5>
+                                    </div>
+                                    <div class="content-pop">
+                                        <label>اسم المنشأة</label>
+                                        <input class="form-control" type="text">
+                                        <label>الموقع الإلكتروني</label>
+                                        <input class="form-control" type="text">
+                                    </div>
+                                    <div class="footer-pop">
+                                        <div class="row">
+                                            <div class="col text-left">
+                                                <button class="cancel mfp-close">الغاء</button>
+                                            </div>
+                                            <div class="col text-right">
+                                                <button class="save">حفظ</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+
+                        <div class="edits">
+
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="edit-section">
+                                        <div class="header">
+                                            <h6> نوع المنشأة <span class="star">*</span> </h6>
+                                            <a href="#test-popup" class="open-popup-link">
+                                                <img src="./assets/images/small-edit-icon.png" alt="icon">
+                                            </a>
+                                            <div id="test-popup" class="white-popup white-pop-milestone mfp-hide">
+                                                <div class="header-pop">
+                                                    <img src="./assets/images/logo.png" alt="logo" class="img-fluid">
+                                                    <h5>تعديل ملف المنشأة</h5>
+                                                </div>
+                                                <div class="content-pop">
+                                                    <label>نوع المنشأة</label>
+                                                    <select class="form-control">
+                                                        <option selected> اختر نوع المنشأة</option>
+                                                        <option>التوظيف الأهلي الخاص - private hiring </option>
+                                                        <option>الجمعيات الخيرية - Charity Organizations </option>
+                                                        <option>بعثات دبلوماسية - Diplomatic missions </option>
+                                                        <option>حكومية - Government Orgnizations </option>
+                                                        <option>شبهه حكومية - Semi Government </option>
+                                                        <option>قطاع خاص - Private Sectors </option>
+                                                        <option>منظمات قطاع مدني - NGO </option>
+                                                    </select>
+                                                </div>
+                                                <div class="footer-pop">
+
+                                                    <div class="row">
+                                                        <div class="col text-left">
+                                                            <button class="cancel mfp-close">الغاء</button>
+                                                        </div>
+                                                        <div class="col text-right">
+                                                            <button class="save">حفظ</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="text">
+                                            <p> قطاع خاص - Sector Private</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-md-4">
+                                    <div class="edit-section">
+                                        <div class="header">
+                                            <h6>مجال العمل <span class="star">*</span> </h6>
+                                            <a href="#test-popup2" class="open-popup-link">
+                                                <img src="./assets/images/small-edit-icon.png" alt="icon">
+                                            </a>
+                                            <div id="test-popup2" class="white-popup white-pop-milestone mfp-hide">
+                                                <div class="header-pop">
+                                                    <img src="./assets/images/logo.png" alt="logo" class="img-fluid">
+                                                    <h5>تعديل ملف المنشأة</h5>
+                                                </div>
+                                                <div class="content-pop">
+                                                    <label>مجال العمل</label>
+                                                    <select class="form-control">
+                                                        <option selected> الشحن واتخليص الجمركي</option>
+                                                        <option>الطبي والصحي</option>
+                                                        <option>الترجمة </option>
+                                                        <option>قطاع الترفيهه </option>
+                                                        <option>المحاماه والإستشارات القانونية </option>
+                                                        <option>الشحن والتخليص الجمركي </option>
+                                                        <option>اإنتاج السينيمائي والفيديو </option>
+                                                        <option>الموسيقي</option>
+                                                        <option>الإستشارات التقنية</option>
+                                                        <option>الإستشارات الهندسية</option>
+                                                    </select>
+                                                </div>
+                                                <div class="footer-pop">
+                                                    <div class="row">
+                                                        <div class="col text-left">
+                                                            <button class="cancel mfp-close">الغاء</button>
+                                                        </div>
+                                                        <div class="col text-right">
+                                                            <button class="save">حفظ</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="text">
+                                            <p>الشحن والتخليص الجمركي</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="edit-section">
+                                        <div class="header">
+                                            <h6> رقم السجل التجاري <span class="star">*</span> </h6>
+                                            <a href="#test-popup3" class="open-popup-link">
+                                                <img src="./assets/images/small-edit-icon.png" alt="icon">
+                                            </a>
+                                            <div id="test-popup3" class="white-popup white-pop-milestone mfp-hide">
+                                                <div class="header-pop">
+                                                    <img src="./assets/images/logo.png" alt="logo" class="img-fluid">
+                                                    <h5>تعديل ملف المنشأة</h5>
+                                                </div>
+                                                <div class="content-pop">
+                                                    <label>رقم السجل التجاري</label>
+                                                    <input class="form-control" type="text">
+                                                </div>
+                                                <div class="footer-pop">
+                                                    <div class="row">
+                                                        <div class="col text-left">
+                                                            <button class="cancel mfp-close">الغاء</button>
+                                                        </div>
+                                                        <div class="col text-right">
+                                                            <button class="save">حفظ</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="text">
+                                            <p>123244343333</p>
+                                        </div>
+                                    </div>
+                                </div>
+                               
+                            </div>
+                            <div class="row">
+                                
+                                <div class="col-md-4">
+                                    <div class="edit-section">
+                                        <div class="header">
+                                            <h6> رقم التأمينات الإجتماعية <span class="star">*</span></h6>
+                                            <a href="#test-popup4" class="open-popup-link">
+                                                <img src="./assets/images/small-edit-icon.png" alt="icon">
+                                            </a>
+                                            <div id="test-popup4" class="white-popup white-pop-milestone mfp-hide">
+                                                <div class="header-pop">
+                                                    <img src="./assets/images/logo.png" alt="logo" class="img-fluid">
+                                                    <h5>تعديل ملف المنشأة</h5>
+                                                </div>
+                                                <div class="content-pop">
+                                                    <label>رقم التأمينات الإجتماعية</label>
+                                                    <input class="form-control" type="text">
+                                                </div>
+                                                <div class="footer-pop">
+                                                    <div class="row">
+                                                        <div class="col text-left">
+                                                            <button class="cancel mfp-close">الغاء</button>
+                                                        </div>
+                                                        <div class="col text-right">
+                                                            <button class="save">حفظ</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="text">
+                                            <p>123244343333</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="edit-section">
+                                        <div class="header">
+                                            <h6> تاريخ انتهاء السجل <span class="star">*</span></h6>
+                                            <a href="#test-popup5" class="open-popup-link">
+                                                <img src="./assets/images/small-edit-icon.png" alt="icon">
+                                            </a>
+                                            <div id="test-popup5" class="white-popup white-pop-milestone mfp-hide">
+                                                <div class="header-pop">
+                                                    <img src="./assets/images/logo.png" alt="logo" class="img-fluid">
+                                                    <h5>تعديل ملف المنشأة</h5>
+                                                </div>
+                                                <div class="content-pop">
+                                                    <label>تاريخ انتهاء السجل</label>
+                                                    <div class="input-field input-group date" id="datetimepicker" >
+                                                        <div class="icon-mail">
+                                                            <img src="./assets/images/datepicker.png" class="img-fluid" alt="datep">
+                                                        </div>
+                                                        <span class="input-group-addon"></span>
+                                                        <input type="text" class="form-control" >
+                                                    </div>
+                                                </div>
+                                                <div class="footer-pop">
+                                                    <div class="row">
+                                                        <div class="col text-left">
+                                                            <button class="cancel mfp-close">الغاء</button>
+                                                        </div>
+                                                        <div class="col text-right">
+                                                            <button class="save">حفظ</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="text">
+                                            <p>2030-06-03</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="edit-section">
+                                        <div class="header">
+                                            <h6> رقم ملف العمل <span class="star">*</span></h6>
+                                            <a href="#test-popup6" class="open-popup-link">
+                                                <img src="./assets/images/small-edit-icon.png" alt="icon">
+                                            </a>
+                                            <div id="test-popup6" class="white-popup white-pop-milestone mfp-hide">
+                                                <div class="header-pop">
+                                                    <img src="./assets/images/logo.png" alt="logo" class="img-fluid">
+                                                    <h5>تعديل ملف المنشأة</h5>
+                                                </div>
+                                                <div class="content-pop">
+                                                    <label> رقم ملف العمل</label>
+                                                    <input class="form-control" type="text">
+                                                </div>
+                                                <div class="footer-pop">
+                                                    <div class="row">
+                                                        <div class="col text-left">
+                                                            <button class="cancel mfp-close">الغاء</button>
+                                                        </div>
+                                                        <div class="col text-right">
+                                                            <button class="save">حفظ</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="text">
+                                            <p>123244343333</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="edit-section">
+                                        <div class="header">
+                                            <h6> رقم الغرفة التجارية <span class="star">*</span></h6>
+                                            <a href="#test-popup7" class="open-popup-link">
+                                                <img src="./assets/images/small-edit-icon.png" alt="icon">
+                                            </a>
+                                            <div id="test-popup7" class="white-popup white-pop-milestone mfp-hide">
+                                                <div class="header-pop">
+                                                    <img src="./assets/images/logo.png" alt="logo" class="img-fluid">
+                                                    <h5>تعديل ملف المنشأة</h5>
+                                                </div>
+                                                <div class="content-pop">
+                                                    <label> رقم الغرفة التجارية</label>
+                                                    <input class="form-control" type="text">
+                                                </div>
+                                                <div class="footer-pop">
+                                                    <div class="row">
+                                                        <div class="col text-left">
+                                                            <button class="cancel mfp-close">الغاء</button>
+                                                        </div>
+                                                        <div class="col text-right">
+                                                            <button class="save">حفظ</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="text">
+                                            <p>123244343333</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="edit-section">
+                                        <div class="header">
+                                            <h6> الرقم الضريبي <span class="star">*</span></h6>
+                                            <a href="#test-popup8" class="open-popup-link">
+                                                <img src="./assets/images/small-edit-icon.png" alt="icon">
+                                            </a>
+                                            <div id="test-popup8" class="white-popup white-pop-milestone mfp-hide">
+                                                <div class="header-pop">
+                                                    <img src="./assets/images/logo.png" alt="logo" class="img-fluid">
+                                                    <h5>تعديل ملف المنشأة</h5>
+                                                </div>
+                                                <div class="content-pop">
+                                                    <label> الرقم الضريبي</label>
+                                                    <input class="form-control" type="text">
+                                                </div>
+                                                <div class="footer-pop">
+                                                    <div class="row">
+                                                        <div class="col text-left">
+                                                            <button class="cancel mfp-close">الغاء</button>
+                                                        </div>
+                                                        <div class="col text-right">
+                                                            <button class="save">حفظ</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="text">
+                                            <p>123244343333</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+
+                        <!-- start main titles -->
+                        <div class="main-titles">
+                            <div class="heading">
+                                <h5>العناوين الرئيسية للمنشأة</h5>
+                            </div>
+
+                            <!-- <div class="table text-right" dir="rtl" >
+                                <div class="row">
+                                    <div class="col-md-2"><h6>مسمي الموقع</h6></div>
+                                    <div class="col-md-2"><h6>الرمز البريدي</h6></div>
+                                    <div class="col-md-8"><h6>العنوان</h6></div>
+                                </div>
+                            </div> -->
+
+
+                            <table class="table table-striped  text-right" >
+                                <thead>
+                                    <tr>
+                                        <th scope="col-8">العنوان</th>
+                                        <th scope="col-2">الرمز البريدي</th>
+                                        <th scope="col-2">مسمي الموقع</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td scope="row">
+                                            <div class="address-update">
+                                                <div class="buttons">
+                                                    <img src="./assets/images/table-delete.PNG" alt="icon">
+                                                    
+                                                    <a href="#popup-edit-address" class="open-popup-link">
+                                                        <img src="./assets/images/table-update.PNG" alt="icon">
+                                                    </a>
+                                                    <div id="popup-edit-address" class="white-popup white-pop-address mfp-hide">
+                                                        <div class="header-pop header-pop-address">
+                                                            <img src="./assets/images/logo.png" alt="logo" class="img-fluid">
+                                                            <h5>تعديل ملف المنشأة</h5>
+                                                        </div>
+                                                        <div class="content-pop">
+                                                            <label> مسمي الموقع</label>
+                                                            <input class="form-control" type="text">
+                                                            <label> العنوان</label>
+                                                            <div class="input-field input-group" >
+                                                                <div class="icon-mail">
+                                                                    <img src="./assets/images/search-icon.png" class="img-fluid" alt="icon">
+                                                                </div>
+                                                                <span class="input-group-addon"></span>
+                                                                <input type="text" class="form-control" >
+                                                            </div>
+
+                                                            <div class="location-map">
+                                                                <iframe width="450" height="200" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="" id="mapping"></iframe>
+                                                            </div>
+                                                            
+                                                            
+                                                        </div>
+                                                        <div class="footer-pop">
+                                                            <div class="row">
+                                                                <div class="col text-left">
+                                                                    <button class="cancel mfp-close">الغاء</button>
+                                                                </div>
+                                                                <div class="col text-right">
+                                                                    <button class="save">حفظ</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <p>6958 هبة الله الغفاري، السليمانية، الرياض 12242 3706، السعودية</p>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <p>122412</p>
+                                        </td>
+                                        <td>
+                                            <p>المقر الرئيسي</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td scope="row">
+                                            <div class="address-update">
+                                                <div class="buttons">
+                                                    <img src="./assets/images/table-delete.PNG" alt="icon">
+                                                    
+                                                    <a href="#popup-edit-address2" class="open-popup-link">
+                                                        <img src="./assets/images/table-update.PNG" alt="icon">
+                                                    </a>
+                                                    <div id="popup-edit-address2" class="white-popup white-pop-address mfp-hide">
+                                                        <div class="header-pop header-pop-address">
+                                                            <img src="./assets/images/logo.png" alt="logo" class="img-fluid">
+                                                            <h5>تعديل ملف المنشأة</h5>
+                                                        </div>
+                                                        <div class="content-pop">
+                                                            <label> مسمي الموقع</label>
+                                                            <input class="form-control" type="text">
+                                                            <label> العنوان</label>
+                                                            <div class="input-field input-group" >
+                                                                <div class="icon-mail">
+                                                                    <img src="./assets/images/search-icon.png" class="img-fluid" alt="icon">
+                                                                </div>
+                                                                <span class="input-group-addon"></span>
+                                                                <input type="text" class="form-control" >
+                                                            </div>
+
+                                                            <div class="location-map">
+                                                                <iframe width="450" height="200" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="" id="mapping2"></iframe>
+                                                            </div>
+                                                            
+                                                            
+                                                        </div>
+                                                        <div class="footer-pop">
+                                                            <div class="row">
+                                                                <div class="col text-left">
+                                                                    <button class="cancel mfp-close">الغاء</button>
+                                                                </div>
+                                                                <div class="col text-right">
+                                                                    <button class="save">حفظ</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <p>6958 هبة الله الغفاري، السليمانية، الرياض 12242 3706، السعودية</p>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <p>122412</p>
+                                        </td>
+                                        <td>
+                                            <p>المقر الرئيسي</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td scope="row">
+                                            <div class="address-update">
+                                                <div class="buttons">
+                                                    <img src="./assets/images/table-delete.PNG" alt="icon">
+                                                    
+                                                    <a href="#popup-edit-address3" class="open-popup-link">
+                                                        <img src="./assets/images/table-update.PNG" alt="icon">
+                                                    </a>
+                                                    <div id="popup-edit-address3" class="white-popup white-pop-address mfp-hide">
+                                                        <div class="header-pop header-pop-address">
+                                                            <img src="./assets/images/logo.png" alt="logo" class="img-fluid">
+                                                            <h5>تعديل ملف المنشأة</h5>
+                                                        </div>
+                                                        <div class="content-pop">
+                                                            <label> مسمي الموقع</label>
+                                                            <input class="form-control" type="text">
+                                                            <label> العنوان</label>
+                                                            <div class="input-field input-group" >
+                                                                <div class="icon-mail">
+                                                                    <img src="./assets/images/search-icon.png" class="img-fluid" alt="icon">
+                                                                </div>
+                                                                <span class="input-group-addon"></span>
+                                                                <input type="text" class="form-control" >
+                                                            </div>
+
+                                                            <div class="location-map">
+                                                                <iframe width="450" height="200" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="" id="mapping3"></iframe>
+                                                            </div>
+                                                            
+                                                            
+                                                        </div>
+                                                        <div class="footer-pop">
+                                                            <div class="row">
+                                                                <div class="col text-left">
+                                                                    <button class="cancel mfp-close">الغاء</button>
+                                                                </div>
+                                                                <div class="col text-right">
+                                                                    <button class="save">حفظ</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <p>6958 هبة الله الغفاري، السليمانية، الرياض 12242 3706، السعودية</p>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <p>122412</p>
+                                        </td>
+                                        <td>
+                                            <p>المقر الرئيسي</p>
+                                        </td>
+                                    </tr>                                  
+                                </tbody>
+                            </table>
+
+                        </div>
+                        <!-- end main titles -->
+                        
+                    </div>
+                    <div class="col-md-1 col-sm-2 icons text-center">
+                        <div class="icon">
+                            <img src="./assets/images/board-icon.png" alt="icon" class="img-fluid">
+                        </div>
+                        <div class="icon">
+                            <img src="./assets/images/users-icon.png" alt="icon" class="img-fluid">
+                        </div>
+                        <div class="icon">
+                            <img src="./assets/images/calendar-icon.png" alt="icon" class="img-fluid">
+                        </div>
+                        <div class="icon active-icon">
+                            <img src="./assets/images/building-icon.png" alt="icon" class="img-fluid">
+                        </div>
+                        <div class="icon">
+                            <img src="./assets/images/notes-icon.png" alt="icon" class="img-fluid">
+                        </div>
+                        <div class="icon">
+                            <img src="./assets/images/ads-icon.png" alt="ads" class="img-fluid">
+                        </div>
+                        <div class="icon">
+                            <img src="./assets/images/users-solid.png" alt="icon" class="img-fluid">
+                        </div>
+                        <div class="icon">
+                            <img src="./assets/images/contact-icon.png" alt="icon" class="img-fluid">
+                        </div>
+                        <div class="icon">
+                            <img src="./assets/images/lock-icon.png" alt="icon" class="img-fluid">
+                        </div>
+                        <div class="icon">
+                            <img src="./assets/images/switch-icon.png" alt="icon" class="img-fluid">
+                        </div>
+                        <div class="icon">
+                            <img src="./assets/images/logout-icon.png" alt="icon" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+    <script src="./assets/js/jquery.min.js"></script>
+    <script src="./assets/js/popper.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+    <!-- <script src="assets/js/magnific-popup.min.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/0.9.1/jquery.magnific-popup.js"></script>
+    <script src="./assets/js/bootstrap-datepicker.min.js"></script>
+    <script src="./assets/js/custom.js"></script>
+    <script>
+        if(window.navigator.geolocation){
+            window.navigator.geolocation.getCurrentPosition(function(data){
+                console.log(data.coords.latitude , data.coords.longitude);  // خطوط الطول وخطوط  العرض
+                let url = "https://maps.google.com/maps?q="+data.coords.latitude+","+data.coords.longitude+"&hl=es&z=14&output=embed"
+                document.getElementById("mapping").src=url;
+                document.getElementById("mapping2").src=url;
+                document.getElementById("mapping3").src=url;
+            },function(error){
+                console.log(error)
+            })
+         }
+    </script>
+   
+    
+    
+    
+</body>
+</html>
