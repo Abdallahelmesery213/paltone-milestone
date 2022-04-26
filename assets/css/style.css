@@ -1087,6 +1087,13 @@ max-height: 530px !important;
 /* end popup of summary */
 
 /* start popup of ads */
+#popup-ads .content-pop,
+#popup-ads2 .content-pop,
+#popup-ads3 .content-pop,
+#popup-ads4 .content-pop,
+#popup-ads-address .content-pop{
+    margin-top: 50px;
+}
 .pop-ads{
     position: relative;
     padding: 20px 40px;
@@ -1096,15 +1103,15 @@ max-height: 530px !important;
     transition: 1s all;
     background: rgba(255, 255, 255, 0.85);
     border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
 }
 
-#popup-ads-address .header-pop{
-    margin-bottom: -25px;
-}
 .pop-ads .content-pop .tabs{
     display: flex;
     position: relative;
-    margin-top: 45px;
+    /* margin-top: 45px; */
     width: 75px;
     height: 261px;
     justify-content: center;
@@ -1122,7 +1129,7 @@ max-height: 530px !important;
     line-height: 34px;
     color: #266962;
     font-weight: 600;
-    margin-top: 40px;
+    /* margin-top: 40px; */
     margin-bottom: 7px;
 }
 .pop-ads .content-pop input, .pop-ads .content-pop select{
@@ -1277,9 +1284,7 @@ max-height: 530px !important;
 /* end popup of ads */
 
 /* start popup of ads2 */
- .textarea-popup{
-    margin-top: 45px;
-}
+
 .textarea-popup textarea{
     height: 254px;
     resize: none;
@@ -1296,12 +1301,7 @@ max-height: 530px !important;
 /* end popup of ads2 */
 
 /* start popup of ads3 */
-.header-ads2{
-    margin-bottom: 20px;
-}
-.learning-popup{
-    margin-top: 35px;
-}
+
 .learning-popup .input-field{
     height: 40px;
 }
