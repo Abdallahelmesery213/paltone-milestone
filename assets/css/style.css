@@ -1229,6 +1229,7 @@ max-height: 530px !important;
 }
 .pop-ads .footer-ads .cancel a{
     font-size: 18px;
+    text-decoration: none;
 }
 .pop-ads .footer-ads .next{
     width: 105px;
@@ -1284,7 +1285,6 @@ max-height: 530px !important;
 /* end popup of ads */
 
 /* start popup of ads2 */
-
 .textarea-popup textarea{
     height: 254px;
     resize: none;
@@ -1306,6 +1306,241 @@ max-height: 530px !important;
     height: 40px;
 }
 /* end popup of ads3 */
+
+/* start summary of ads */
+.summary-ads .ads-title{
+    background: #266962;
+    border-radius: 5px;
+    height: 86px;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    position: relative;
+    margin-top: 60px;
+}
+.summary-ads .ads-title .qr-code{
+    width: 58px;
+    height: 58px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.summary-ads .ads-title .job-title{
+    direction: rtl;
+}
+.summary-ads .ads-title .job-title h2{
+    font-family: 'Cairo', sans-serif !important;
+    font-size: 24px;
+}
+.summary-ads .ads-title .job-title h5{
+    font-size: 18px;
+}
+.summary-ads .job-details .inform-section{
+    border: 1px solid #C4C4C4;
+    box-sizing: border-box;
+    border-radius: 5px;
+    /* max-width: 300px; */
+}
+.summary-ads .job-details .inform-section .header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #266962;
+    border-radius: 5px 5px 0px 0px;
+    height: 40px;
+}
+.summary-ads .job-details .inform-section .header h6{
+    font-weight: 400;
+    font-size: 14px;
+    color: #e4eceb;
+}
+.summary-ads .job-details .inform-section .text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 35px;
+    position: relative;
+}
+.summary-ads .job-details .inform-section .text p{
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 26px;
+    color: #266962;
+    top: 50%;
+    transform: translateY(-50%);
+    position: absolute;
+}
+.job-details .job-details-row{
+    margin-bottom: 10px !important;
+}
+.summary-ads .job-data{
+    display: flex;
+}
+.summary-ads .job-data h4{
+    font-size: 24px;
+    font-weight: 600;
+    margin-right: 15px;
+}
+.job-details hr{
+    width: 100%;
+    height: 2px;
+    background: #266962;
+    border-radius: 5px;
+    margin-top: 50px;
+    margin-bottom: 40px;
+}
+.summary-ads .sections hr{
+    width: 100%;
+    height: 2px;
+    background: #94959C;
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+.summary-ads .sections .section-details .row-one{
+    align-items: center;
+}
+.summary-ads .sections .section-details .row-two{
+    margin-bottom: 0;
+}
+.summary-ads .sections .section-details .row-one .add{
+    max-width: 280px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #0A6693;
+    color: #fff;
+    border-radius: 5px;
+}
+.summary-ads .sections .section-details .row-one .add a{
+    font-size: 24px;
+    line-height: 45px;
+    cursor: pointer;
+}
+.summary-ads .sections .section-details .row-one .title-section{
+    display: flex;
+    align-items: center;
+}
+.summary-ads .sections .section-details .row-one .title-section h5{
+    font-size: 24px;
+    line-height: 45px;
+    color: #94959C;
+    margin-right: 50px;
+}
+.summary-ads .sections .section-details .row-two p{
+    font-size: 20px;
+    line-height: 45px;
+    color: #94959C;
+    margin-top: -20px;
+}
+@media only screen and (max-width: 768px) {
+    .summary-ads .ads-title .qr-code{
+        transform: translateY(0);
+    }
+    .summary-ads .job-details .inform-section .header h6{
+        text-align: center;
+    }
+    .summary-ads .job-details .inform-section{
+        margin-bottom: 20px;
+    }
+    .summary-ads .sections .section-details .row-one .add{
+        margin: auto;
+        margin-bottom: 20px;
+    }
+}
+@media only screen and (max-width: 375px) {
+    .summary-ads .ads-title .job-title h5{
+        font-size: 14px;
+    }
+}
+/* end summary of ads */
+
+/* start of popup of skills */
+.popup-skills .content-pop{
+    margin-top: 50px;
+}
+#popup-skills1 .the-job{
+    margin: auto;
+    margin-top: 30px;
+    background: #FFFFFF;
+    border-radius: 5px;
+    width: 248px;
+    height: 54px;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    position: relative;
+}
+#popup-skills1 .the-job p{
+    font-size: 18px;
+    line-height: 34px;
+    color: #266962;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+#popup-skills1 .form{
+    width: 90%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+#popup-skills1 .form .form-check{
+    border-left: 4px solid #94959C;
+    max-width: 300px;
+    height: 78px;
+    background: #FFFFFF;
+    border-radius: 5px;
+    position: relative;
+}
+#popup-skills1 .form .form-check label{
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 22px;
+    color: #94959C;
+    margin-top: 5px;
+    margin-bottom: 0;
+}
+#popup-skills1 .form .form-check input[type='radio']{
+    width: 30px;
+    height: 30px;
+    accent-color: #266962;
+}
+#popup-skills1 .form .message-details{
+    display: none;
+    background: rgba(0, 0, 0, 0.78);
+    border-radius: 5px;
+    width: 237px;
+    height: 65px;
+    margin: auto;
+    padding: 3px 5px;
+}
+#popup-skills1 .form .message-details p{
+    font-size: 10px;
+    line-height: 19px;
+    text-align: center;
+    color: #FFFFFF;
+}
+#popup-skills1 .form .form-check .det-icon img{
+    cursor: pointer;
+}
+#popup-skills1 .form .form-check .det-icon img:hover div.message-details{
+    display: block !important;
+}
+.popup-skills .form-group{
+    margin-bottom: 30px;
+}
+#popup-skills3 h6{
+    font-size: 18px;
+    line-height: 34px;
+    color: #266962;
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+/* end of popup of skills */
 
 
 
